@@ -1,16 +1,32 @@
-# React + Vite
+# Pathfinder frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive React interface for the AI-powered career guidance backend.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Install dependencies with `npm install`.
+2. Copy `.env.example` to `.env` and set `VITE_API_URL` to the backend API base URL (for example `http://localhost:5000/api`).
+3. Start the development server with `npm run dev`.
 
-## React Compiler
+The backend must be running and reachable from the browser. The frontend sends authenticated API requests with the login token and does not connect directly to MongoDB, Gemini, or YouTube.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- Register, sign in, and sign out
+- Career dashboard and profile editor
+- Job description analysis and skill gap comparison
+- Personalized learning roadmap and skill resources
+- AI career guidance
+- Resume feedback from PDF, DOCX, or pasted text (backend limit: 5 MB)
+- Mock interview question generation, answer evaluation, and history
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Source layout
+
+- `src/app` contains the application entry, route definitions, and auth/theme providers.
+- `src/features` groups each workflow's pages and API functions.
+- `src/components/ui` contains shared controls and presentation primitives.
+- `src/layouts` contains the authenticated dashboard shell and auth-page layout.
+- `src/lib` centralizes the API client and browser storage keys.
+- `src/hooks`, `src/utils`, and `src/constants` hold reusable helpers.
+
+Run `npm run build` to create a production bundle and `npm run lint` for lint checks.

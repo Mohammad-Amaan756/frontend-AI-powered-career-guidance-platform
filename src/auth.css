@@ -1,0 +1,105 @@
+/* Keep login and registration surfaces readable when a saved theme is active. */
+:root[data-theme="light"] .auth-page {
+  background: #fff;
+  color: #232a37;
+}
+
+:root[data-theme="light"] .auth-form-wrap {
+  background: #fff;
+}
+
+:root[data-theme="light"] .auth-form h2 {
+  color: #202632;
+}
+
+:root[data-theme="light"] .auth-form > .muted,
+:root[data-theme="light"] .auth-switch {
+  color: #737c8a;
+}
+
+:root[data-theme="light"] .auth-note {
+  color: #89919e;
+  border-color: #e9ebef;
+}
+
+:root[data-theme="light"] .auth-form .field {
+  color: #384252;
+}
+
+:root[data-theme="light"] .auth-form .field input {
+  color: #2f3948;
+  background: #fff;
+  border-color: #dde2e9;
+}
+
+:root[data-theme="light"] .auth-form .field input::placeholder {
+  color: #a1a8b3;
+}
+
+:root[data-theme="light"] .auth-form .field input:focus {
+  border-color: #8299e7;
+  box-shadow: 0 0 0 3px #eef1ff;
+}
+
+:root[data-theme="light"] .auth-switch a {
+  color: #3157c5;
+}
+
+:root[data-theme="dark"] .auth-page {
+  background: #101827;
+  color: #e5eaf2;
+}
+
+:root[data-theme="dark"] .auth-form-wrap {
+  background: #101827;
+}
+
+:root[data-theme="dark"] .auth-form h2 {
+  color: #eef2f8;
+}
+
+:root[data-theme="dark"] .auth-form > .muted,
+:root[data-theme="dark"] .auth-switch {
+  color: #a8b3c3;
+}
+
+:root[data-theme="dark"] .auth-note {
+  color: #94a0b1;
+  border-color: #2a384c;
+}
+
+:root[data-theme="dark"] .auth-form .eyebrow {
+  color: #a8b9ff;
+}
+
+:root[data-theme="dark"] .auth-form .field {
+  color: #dce3ed;
+}
+
+:root[data-theme="dark"] .auth-form .field input {
+  color: #edf1f7;
+  background: #1a2638;
+  border-color: #394a63;
+}
+
+:root[data-theme="dark"] .auth-form .field input::placeholder {
+  color: #8997ab;
+}
+
+:root[data-theme="dark"] .auth-form .field input:focus {
+  border-color: #8299ed;
+  box-shadow: 0 0 0 3px #29375a;
+}
+
+:root[data-theme="dark"] .auth-switch a {
+  color: #b5c4ff;
+}
+
+:root[data-theme="dark"] .auth-form .notice.error {
+  background: #3b272c;
+  color: #ffb1b4;
+}
+
+:root[data-theme="dark"] .mobile-brand {
+  color: #eff2f8;
+}
