@@ -1,4 +1,4 @@
-# AI Powered career guidance and skill gap analysis frontend
+# Pathfinder – AI Powered Career Guidance and Skill Gap Analysis
 
 A responsive React interface for the AI-powered career guidance backend.
 
